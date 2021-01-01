@@ -5,29 +5,83 @@
    Website:  TODO
 			========================================== */
 
-/*====== Start Main Rules(Core Styles) ======*/
-
 /* google font(Roboto Condensed) */
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap");
 
 /* CSS Variables */
 
 :root {
-  --dark: #333;
-  --light: #fff;
-  --lightgrey: #f4f4f4;
-  --Nero: #262626;
-  --grey: #f2f2f2;
-  --lightblack: #616161;
-  --Gray80: #ccc;
+  --lightGrey: #eee;
+  --Grey3: #333;
+  --Grey8: #888;
+  --GreyC: #ccc;
+  --GreyF: #f4f4f4f4;
+  --white: #fff;
 }
 
 body {
   font-family: "Roboto Condensed", sans-serif;
+  background-color: var(--lightGrey);
+  height: auto;
 }
 
-/*====== End Main Rules ======*
+h1 {
+  font-weight: 400;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  margin: 0;
+}
 
+h2 {
+  font-weight: 400;
+  font-size: 2.2rem;
+  margin: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+main {
+  max-width: 900px;
+  margin: auto;
+  box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.1),
+    -30px 0px 40px rgba(0, 0, 0, 0.1);
+}
+
+/*====== Landing Area ======*/
+
+#landing {
+  background-color: var(--white);
+  display: flex;
+  flex: 0 1 40vw;
+  height: 50vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+#landing-text h2 {
+  color: var(--Grey8);
+}
+
+.btn {
+  padding: 0.5rem 2rem;
+  border: 1px solid var(--GreyC);
+  display: inline-block;
+  margin: 2rem 0 0;
+  border-radius: 50px;
+  text-decoration: none;
+  color: var(--Grey3);
+  transition: background 500ms ease;
+}
+
+.btn:hover {
+  background-color: var(--GreyF);
+}
 
 /*====== Start Footer ======*/
 
